@@ -30,7 +30,7 @@ const ffmpegCommand = [
   '-video_track_timescale', '100',
   '-b:v', '1500k',
   '-f', 'flv',
-  `rtmp://a.rtmp.youtube.com/live2/${streamkey}`,
+  `rtmps://live-api-s.facebook.com:443/rtmp/${streamkey}`,
 ];
 
 const child = spawn(ffmpegCommand[0], ffmpegCommand.slice(1));
